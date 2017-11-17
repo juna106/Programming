@@ -1,0 +1,17 @@
+import javax.swing.*;
+public class MilesToFeetInput {
+
+	public static void main(String[] args) {
+		
+	final double MILES_TO_FEET = 5280.00;
+		String distanceToSchool = 
+		JOptionPane.showInputDialog(null, "please enter the distance in miles");
+					
+	double distanceToSchoolInFeet = Double.parseDouble(distanceToSchool) * MILES_TO_FEET;
+		//System.out.println("The distance to school is " +   distanceToSchoolInFeet);
+	JOptionPane.showMessageDialog(null, "The distance to school is " + distanceToSchoolInFeet + " feet");
+
+
+			}
+
+	}
