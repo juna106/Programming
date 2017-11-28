@@ -1,0 +1,19 @@
+import javax.swing.*;
+public class FahrenheitToCelsius {
+
+	public static void main(String[] args) {
+		//int myGrade = 50;
+		//// yourGrade = 100;
+		
+		//int average = ((myGrade + yourGrade)/2);
+		//System.out.println(average);
+		
+		double tempInFahr = 67;
+		double tempInCelsius = (tempInFahr - 32) * 5/9;
+		System.out.println(tempInCelsius);
+		
+		
+		
+	}
+
+}
