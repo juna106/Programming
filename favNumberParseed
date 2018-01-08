@@ -1,0 +1,33 @@
+import javax.swing.*;
+public class favNumberParsed {
+
+	public static void main(String[] args) {
+		 /*
+	   	  *  Purpose: to take an  input entered into 
+	   	  *  the showInputDialog box and convert it to an integer
+	   	  *  so that it can be used in math.
+	   	  */
+	    
+	//Step 1: Create Variable to hold information that
+	    //the user enters in the input dialog box.
+	   	 String favNumber;
+	   	 int favNumberConverted;
+	   	 int favNumberConvertedTimesTwo;
+	   	 
+	   	 //Step 2: Prompt user with the dialog box
+	   	 favNumber = JOptionPane.showInputDialog(null, "Enter your favorite number, and I will " +
+	   			 "multiply it by 2.");
+	   	 favNumberConverted = Integer.parseInt(favNumber);
+	   	 
+	   	 favNumberConvertedTimesTwo = favNumberConverted * 2;
+	   	 
+
+	   	 JOptionPane.showMessageDialog(null, "your favorite number multiplied by 2 is " + 
+	   	 
+	   			 favNumberConvertedTimesTwo);
+	    
+
+
+	}
+
+}
