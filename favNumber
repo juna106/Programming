@@ -1,0 +1,24 @@
+import javax.swing.*;
+		public class favNumber {
+
+		    public static void main(String[] args) {
+		   	 /* Purpose: to take inputs using
+		   	  *  the showInputDialog box and then display what was entered in 
+		   	  *  a showMessageDialog box.
+		   	  */
+		    
+		//Step 1: Create Variable to hold information that
+		    //the user enters in the input dialog box.
+		   	 String favNumber;
+		   	 
+		   	 //Step 2: Prompt user with the dialog box
+		   	 favNumber = JOptionPane.showInputDialog(null, "Enter your favorite number");
+
+		   	 JOptionPane.showMessageDialog(null, "your favorite number is" + favNumber);
+		    
+		    }
+
+		}
+
+
+
