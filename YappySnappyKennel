@@ -1,0 +1,24 @@
+import javax.swing.*;
+public class DogBoarding {
+
+public static void main(String[] args) {
+
+String dogWeight;
+String lengthOfStay;
+double totalWeight;
+int totalDays;
+double totalPrice;
+
+ dogWeight = JOptionPane.showInputDialog(null, "Please Enter Your Dog's Weight");
+ totalWeight = Double.parseDouble(dogWeight);
+ lengthOfStay = JOptionPane.showInputDialog(null, "Please Enter Length of Stay");
+ totalDays = Integer.parseInt(lengthOfStay);
+ 
+ totalPrice = totalWeight * totalDays;
+ 
+JOptionPane.showMessageDialog(null, "Your price for boarding will be " + totalPrice +
+		" dollars");
+
+	}
+
+}
