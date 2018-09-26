@@ -1,0 +1,4 @@
+screamOfHelp = 0
+
+for screamOfHelp in range(5):
+    print("Help, I am being abducted by aliens!")
