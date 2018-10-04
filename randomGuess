@@ -1,0 +1,22 @@
+import random
+number = random.randint(1,99)
+guesses = 0
+while guesses < 5:
+    for eachPass in range(4):
+        guess = int(raw_input("Enter an integer from 1-99:"))
+        #guesses +=1
+        guesses = (guesses +1)
+        print "number of guesses:  %d" %guesses
+        if guess< number:
+            print"guess is low!!"
+        elif guess>number:
+            print"guess is high!!"
+        elif guess == number:
+            break
+        if guess == number:
+            guesses = str(guesses)
+            print"You guessed the right number in: ", guesses + "guesses!"
+
+    if guess != number: number = str(number)
+    print"The secret number was:", number + "-- That's why they call me scary!!"
+        
