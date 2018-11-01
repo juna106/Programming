@@ -1,0 +1,21 @@
+'''%sand %d are Format Specifiers or
+placeholders for formatting
+strings/decimals/floats etc.
+
+Most common used Format specifier:
+
+%s : string
+
+%d : decimals
+
+%f : float
+'''
+
+name = "Gandalf"
+fullName = "Gandalf the Grey"
+age = 84
+IQ = 179.8
+print('The Wizard\'s name is %s' %(name))
+print('The Wizard\'s age is %d' % (age))
+print('The Wizard\'s IQ is %f' % (IQ))
+print('The Wizard\'s full name is %s' % (fullName))
