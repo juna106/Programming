@@ -1,0 +1,26 @@
+class Things:
+    pass
+
+class Inanimate(Things):
+    pass
+
+class Animate(Things):
+    pass
+
+class Animals(Animate):
+    
+    def move(self):
+        print('moving')
+    def eat_food(self):
+        print('eating food')
+
+class Mammals(Animals):
+    def breathe(self):
+        print('breathing')
+    def feed_young_with_milk(self):
+        print('feeding young')
+
+class Giraffes(Mammals):
+    def eat_leaves_from_trees(self):
+        print('eating leaves')
+        
