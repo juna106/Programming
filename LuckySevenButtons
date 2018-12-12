@@ -1,0 +1,28 @@
+import tkinter
+import random
+
+MAX_ROLL = 6
+
+window = tkinter.Tk()
+window.title("Lucky Sevens")
+
+# creating a function called game
+def game():
+  
+    dieRoll1 = random.randrange(1, MAX_ROLL)
+    dieRoll2 = random.randrange(1, MAX_ROLL)
+
+    if dieRoll1 + dieRoll2 == 7:
+       # pot = pot + 4
+        tkinter.Label(window, text = "you won").pack()
+    else:
+            #pot = pot - 1
+            tkinter.Label(window, text = "you lost").pack()
+            #return pot
+
+tkinter.Label(window, text = "Welcome to Lucky Sevens").pack()
+     
+
+tkinter.Button(window, text = "Click To Play!", command = game).pack() # 'command' is executed when you click the button
+                                                                    # in this above case we're calling the function 'play_game'.
+window.mainloop()
